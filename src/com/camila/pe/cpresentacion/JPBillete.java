@@ -207,7 +207,10 @@ public class JPBillete extends javax.swing.JPanel {
             b.setDestino(txtdestino.getText());
             b.setOrigen(txtorigen.getText());
             b.setItinerario(txtitinerario.getText());
-            
+            b.setDNI((String) jccliente.getSelectedItem());
+            b.setNro_compañia((String) jccompañia.getSelectedItem());
+
+
            // cp.getNro_compañia()
             btbo.agregarBillete(b);
 
